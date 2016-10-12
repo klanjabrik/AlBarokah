@@ -37,7 +37,7 @@
 
     // // Close the dropdown menu if the user clicks outside of it
     window.onclick = function(event) {
-      console.log(event);
+      // console.log(event);
       if (!event.target.matches('.dropbtn') && !event.target.matches('.icon-dropbtn')) {
 
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -57,7 +57,7 @@
         <div class="row">
             <div class="five columns shop-name"><a id="home" href="#home">البركة</a></div>
             <div class="two columns u-text-center">
-              <div class="preloader" id="preloader" style="display:none"></div>
+              <div class="preloader" id="preloader" style="display:none">|</div>
             </div>
             <div class="five columns u-text-right">
                 <div class="dropdown">
