@@ -5,8 +5,11 @@
   <title>Point of Sales</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  
+  <script src="vendors/lodash.min.js" type="text/javascript"></script>
+  <script src="vendors/pouchdb.min.js" type="text/javascript"></script>
+  <script src="vendors/pouchdb.find.min.js" type="text/javascript"></script>
+  <script src="vendors/mousetrap.min.js" type="text/javascript"></script>
+  <script src="vendors/mousetrap-global-bind.min.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <style type="text/css">
     html, body {
@@ -59,10 +62,10 @@
                 <div class="dropdown">
                   <a href="javascript:void 0" onclick="myFunction()" class="dropbtn">Menu</a>
                   <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Kasir</a>
+                    <a href="#home">Kasir (Ctrl + 1)</a>
                     <div class="separator">&nbsp;</div>
-                    <a href="#products">Produk</a>
-                    <a href="#sales">Penjualan</a>
+                    <a href="#products">Produk (Ctrl + P)</a>
+                    <a href="#sales">Penjualan (Ctrl + R)</a>
                     <div class="separator">&nbsp;</div>
                     <a href="#configurations">Konfigurasi</a>
                     <div class="separator">&nbsp;</div>
@@ -74,7 +77,6 @@
         </div>
     </nav>
   <div id="riot-app"></div>
-  <script src="vendor.bundle.js"></script>
   <script src="bundle.js"></script>
 </body>
 </html>
